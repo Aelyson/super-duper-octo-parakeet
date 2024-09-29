@@ -60,13 +60,13 @@
     <!-- Página com mensagem e botão para prosseguir -->
     <div id="messagePage">
         <h2></h2>
-        <p>Ah não cara 😥</p>
+        <p>Ah não cara 😥🤦🏻‍♂️</p>
         <button id="proceedButton" onclick="showVideoPage()">Prosseguir</button>
     </div>
 
     <!-- Página do vídeo -->
     <div id="videoPage">
-        <iframe id="kwaiVideo" src="https://www.kwai.com/embed/5205748327835808614" title="video detail" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe id="kwaiVideo" src="https://www.kwai.com/embed/5211377824051281172" title="video detail" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         <!-- Botões de navegação -->
         <div class="nav-buttons">
@@ -79,15 +79,15 @@
 <script>
     // Lista de vídeos a serem exibidos
     var videoList = [
-        "https://www.kwai.com/embed/5205748327835808614",
-        "https://www.kwai.com/embed/5209126026448976154", // Substitua por URLs válidas
+        "https://www.kwai.com/embed/5211377824051281172",
+        "https://www.kwai.com/embed/5198711453401287658", // Substitua por URLs válidas
     ];
     var currentIndex = 0; // Índice do vídeo atual
 
     // Função para verificar a senha
     function checkPassword() {
         var password = document.getElementById("passwordInput").value;
-        if (password === "123456") {  // Defina a senha correta aqui
+        if (password === "123") {  // Defina a senha correta aqui
             document.getElementById("passwordPage").style.display = "none";  // Esconde a página de senha
             document.getElementById("messagePage").style.display = "block";  // Mostra a página de mensagem com o botão
         } else {
